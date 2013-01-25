@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/frameLayout"
+    android:background="@android:color/transparent" >
+    <SlidingDrawer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        android:id="@+id/slide">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@id/handle"
+            android:src="@drawable/wtf">
+        </ImageView>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@id/content"
+            android:background="@drawable/wtf_background">
+
+            <TextView
+                android:paddingLeft ="50dp"
+                android:paddingTop  ="20dp"
+                android:paddingRight ="25dp"
+                android:paddingBottom ="5dp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:textColor="#000000"
+                android:text="@string/wtf_lorem_ipsum" />
+        </LinearLayout>
+    </SlidingDrawer>
+</FrameLayout>
